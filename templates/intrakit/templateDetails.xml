@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+    <name>intrakit</name>
+	<version>1.0</version>
+	<creationDate>16/April/2016</creationDate>
+	<author>Darran Molloy</author>
+	<authorEmail>admin@intraclinik.com</authorEmail>
+	<copyright>Copyright (C) 2016 Darran Molloy. All rights reserved.</copyright>
+	<description>TPL_INTRAKIT_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+        <filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>chosen</folder>
+		<folder>css</folder>
+        <folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+		<folder>lib</folder>
+		<folder>radialprogress</folder>
+		<folder>uikit</folder>
+		<folder>waves</folder>
+		<folder>weightedtree</folder>
+	</files>
+	<positions>
+        <position>logo</position>
+        <position>toolbar1</position>
+        <position>toolbar2</position>
+        <position>ajaxSearch</position>
+        <position>login</position>
+        <position>cart</position>
+        <position>slideshowTop</position>
+        <position>topBanner</position>
+        <position>breadcrumbs</position>
+		<position>debug</position>
+        <position>mainNav</position>
+		<position>top1</position>
+        <position>top1Default</position>
+        <position>top1Primary</position>
+        <position>top1Secondary</position>
+        <position>top1Muted</position>
+        <position>top2</position>
+        <position>top2Default</position>
+        <position>top2Primary</position>
+        <position>top2Secondary</position>
+        <position>top2Muted</position>
+        <position>top3</position>
+        <position>top3Default</position>
+        <position>top3Primary</position>
+        <position>top3Secondary</position>
+        <position>top3Muted</position>
+        <position>sidebar1</position>
+        <position>sidebar2</position>
+        <position>sidebar3</position>
+        <position>mainbodyTop</position>
+        <position>mainbody</position>
+        <position>mainbodyBottom</position>
+        <position>bottom1</position>
+        <position>bottom1Default</position>
+        <position>bottom1Primary</position>
+        <position>bottom1Secondary</position>
+        <position>bottom1Muted</position>
+        <position>bottom2</position>
+        <position>bottom2Default</position>
+        <position>bottom2Primary</position>
+        <position>bottom2Secondary</position>
+        <position>bottom2Muted</position>
+        <position>bottom3</position>
+        <position>bottom3Default</position>
+        <position>bottom3Primary</position>
+        <position>bottom3Secondary</position>
+        <position>bottom3Muted</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_intrakit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_intrakit.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+              <field name="core_css" type="filelist" default="uikit.min.css" label="Core CSS File" description="" directory="templates/intrakit/uikit/dist/css" filter="" exclude="" stripext="" />
+               <field 
+                    name="company_name" 
+                    class="" 
+                    type="text" 
+                    label="TPL_INTRAKIT_COMPANY_NAME_LABEL" 
+                    description="TPL_INTRAKIT_COMPANY_NAME_DESC" 
+               />
+               <field 
+                    name="company_address" 
+                    class="" 
+                    type="textarea" 
+                    label="TPL_INTRAKIT_COMPANY_ADDRESS_LABEL" 
+                    description="TPL_INTRAKIT_COMPANY_ADDRESS_DESC" 
+               />
+               <field 
+                    name="company_phone" 
+                    class=""
+                    type="text" 
+                    label="TPL_INTRAKIT_COMPANY_PHONE_LABEL" 
+                    description="TPL_INTRAKIT_COMPANY_PHONE_DESC" 
+               />
+               <field 
+                    name="company_email" 
+                    class=""
+                    type="email" 
+                    label="TPL_INTRAKIT_COMPANY_EMAIL_LABEL" 
+                    description="TPL_INTRAKIT_COMPANY_EMAIL_DESC" 
+               />
+               <field 
+                    name="paypal_email" 
+                    class="" 
+                    type="email" 
+                    label="TPL_INTRAKIT_PAYPAL_EMAIL_LABEL" 
+                    description="TPL_INTRAKIT_PAYPAL_EMAIL_DESC" 
+               />
+               <field name="logoFile" class="" type="media" default=""
+                   label="TPL_INTRAKIT_LOGO_LABEL"
+                   description="TPL_INTRAKIT_LOGO_DESC" 
+               />
+            </fieldset>
+			<fieldset name="options">
+			    <field 
+                    name="google_analytics" 
+                    class="" 
+                    type="text" 
+                    label="TPL_INTRAKIT_GOOGLE_ANALYTICS_LABEL" 
+                    description="TPL_INTRAKIT_GOOGLE_ANALYTICS_DESC" 
+                />
+               <field 
+                    name="facebook_page" 
+                    class="" 
+                    type="url" 
+                    label="TPL_INTRAKIT_FACEBOOK_PAGE_LABEL" 
+                    description="TPL_INTRAKIT_FACEBOOK_PAGE_DESC" 
+                />
+                <field 
+                    name="twitter_page" 
+                    class="" 
+                    type="text" 
+                    label="TPL_INTRAKIT_TWITTER_PAGE_LABEL" 
+                    description="TPL_INTRAKIT_TWITTER_PAGE_DESC" 
+                />
+                <field 
+                    name="pinterest_page" 
+                    class="" 
+                    type="url" 
+                    label="TPL_INTRAKIT_PINTEREST_PAGE_LABEL" 
+                    description="TPL_INTRAKIT_PINTEREST_PAGE_DESC" 
+                />
+                <field 
+                    name="googleplus_page" 
+                    class="" 
+                    type="url" 
+                    label="TPL_INTRAKIT_GOOGLE_PAGE_LABEL" 
+                    description="TPL_INTRAKIT_GOOGLE_PAGE_DESC" 
+                />
+                <field 
+                    name="linkedin_page" 
+                    class="" 
+                    type="url" 
+                    label="TPL_INTRAKIT_LINKEDIN_PAGE_LABEL" 
+                    description="TPL_INTRAKIT_LINKEDIN_PAGE_DESC" 
+                />
+               <field name="popup_pinterest"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_INTRAKIT_PINTEREST_SHARE_LABEL"
+					description="TPL_INTRAKIT_PINTEREST_SHARE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="popup_twitter"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_INTRAKIT_TWITTER_SHARE_LABEL"
+					description="TPL_INTRAKIT_TWITTER_SHARE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="popup_facebook"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_INTRAKIT_FACEBOOK_SHARE_LABEL"
+					description="TPL_INTRAKIT_FACEBOOK_SHARE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="popup_linkedin"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_INTRAKIT_LINKEDIN_SHARE_LABEL"
+					description="TPL_INTRAKIT_LINKEDIN_SHARE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="popup_google"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_INTRAKIT_GOOGLE_SHARE_LABEL"
+					description="TPL_INTRAKIT_GOOGLE_SHARE_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+            </fieldset>
+		</fields>
+	</config>
+</extension>
